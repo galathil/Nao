@@ -1303,6 +1303,7 @@ public class Characters {
 		}
 
 		if (_mount != null){
+			SocketManager.GAME_SEND_Re_PACKET(this,"+",_mount);
 			SocketManager.GAME_SEND_Rx_PACKET(this);
 		}
 
