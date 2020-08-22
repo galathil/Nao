@@ -2294,6 +2294,7 @@ public class Fight {
 		//if (!verifyStillInFight())
 		verifIfTeamAllDead();
 
+		/*
 		if (_state >= Constant.FIGHT_STATE_FINISHED)
 			return;
 
@@ -2301,7 +2302,7 @@ public class Fight {
 			Thread.sleep(500);
 		} catch (InterruptedException e1) {
 			e1.printStackTrace();
-		}
+		}*/
 
 		_curPlayer++;
 		_curAction = "";
@@ -2531,7 +2532,7 @@ public class Fight {
 			if (isAuto) { // Puis on laisse le temps de terminer l'action si on
 							// a une lancée à la dernière seconde |Skryn/Return
 				try {
-					Thread.sleep(2100);
+					Thread.sleep(1000);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}

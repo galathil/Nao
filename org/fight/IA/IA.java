@@ -110,6 +110,7 @@ public class IA {
 					IA_14.apply(_fighter, _fight, stop);
 					break;
 				}
+				/*
 				try {
 					if (IA_Type == 0) {
 						Thread.sleep(250L);
@@ -117,7 +118,7 @@ public class IA {
 						Thread.sleep(2000L);
 					}
 				} catch (InterruptedException localInterruptedException3) {
-				}
+				}*/
 				if (!_fighter.isDead()) {
 					_fight.endTurn(true);
 				}
